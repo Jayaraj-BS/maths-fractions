@@ -1,0 +1,17 @@
+<div class="tree-container">
+  <mat-card>
+    <div *ngIf="decisionTree[currentStep].question">
+      <h2>{{ decisionTree[currentStep].question }}</h2>
+      <button *ngFor="let option of decisionTree[currentStep].options" mat-raised-button color="primary" (click)="proceed(option.nextStep)">
+        {{ option.text }}
+      </button>
+    </div>
+
+    <div *ngIf="decisionTree[currentStep].content">
+      <p>{{ decisionTree[currentStep].content }}</p>
+      <button *ngFor="let option of decisionTree[currentStep].options" mat-raised-button color="accent" (click)="proceed(option.nextStep)">
+        {{ option.text }}
+      </button>
+    </div>
+  </mat-card>
+</div>

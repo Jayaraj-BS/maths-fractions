@@ -1,0 +1,73 @@
+@if (!gotoFractions) {
+<div class="content">
+     <h1>Understanding Fractions</h1>
+     <p class="intro-text">Fractions are like pieces of a pizza or cake! They help us show how something is split into
+          equal parts.</p>
+     <p class="key-point">The <b>Top Number</b> (numerator) tells you how many parts you have, and the <b>Bottom
+               Number</b> (denominator) tells you how many equal parts the whole is divided into.</p>
+     <div class="example">
+          <p class="fraction-description1">For example, the fraction <b>1/4</b> means:</p>
+          <p class="fraction-description">You have 1 piece out of 4 equal pieces of something, like a pizza that's
+               divided into 4 slices, and you have one slice!</p>
+     </div>
+</div>
+
+<div class="content">
+     <h4>Visualizing Fractions with a Circle</h4>
+     <p class="intro-text2">This circle is divided into 4 equal parts, each representing a fraction. The parts are
+          labeled as 1/4, 2/4, 3/4, and 4/4. Hover over each part to see how the fractions are represented visually:</p>
+</div>
+
+
+
+
+<div class="circle">
+     <div class="part part1">
+          <span class="text">1/4</span>
+     </div>
+     <div class="part part2">
+          <span class="text">2/4</span>
+     </div>
+     <div class="part part3">
+          <span class="text">4/4</span>
+     </div>
+     <div class="part part4">
+          <span class="text">3/4</span>
+     </div>
+</div>
+
+
+
+
+<!-- Content Below the Circle -->
+<div class="card-container">
+     <div class="card">
+          <h3>Real-Life Uses of Fractions</h3>
+          <p>Fractions are used in dialy life! For Example :</p>
+          <p>1) Cutting a pizza into equal slices</p>
+          <p>2) Splitting a bar of chocolate amoung friends</p>
+          <p>3) Measuring Ingredients while cooking (e.g., 1/2) cup of sugar.</p>
+          <p>Fractions help us divide and share things equally</p>
+     </div>
+     <div class="card">
+          <h3>Different Types of Fractions</h3>
+          <p><b>Proper Fraction: </b>The Numerator is Smaller than the Denominator (e.g., 3/4)</p>
+          <p><b>ImProper Fraction: </b>The Numerator is Larger than the Denominator (e.g., 5/4)</p>
+          <p><b>Mixed Fraction: </b>A Whole number combined with a fraction (e.g., 2 1/2 means..Having 2 full pizzas and then half of a third pizza.)</p>
+     </div>
+     <div class="card">
+          <h3>Comparing Fractions</h3>
+          <p>Find a common denominator or use cross-multiplication</p>
+          <p>Example: Which is bigger, 2/3 or 3/4 ? <br>Convert them to have the same denominator or cross-multiply: 2 x
+               4 = 8 and 3 x 3 = 9. Since 9 > 8, 3/4 is greater than 2/3!</p>
+     </div>
+</div>
+
+<br><br>
+}
+<button (click)="viewFractions()">{{buttonText}}</button>
+
+@if (gotoFractions) {
+<app-fractions-visualization></app-fractions-visualization>
+<app-fractions-quiz></app-fractions-quiz>
+}

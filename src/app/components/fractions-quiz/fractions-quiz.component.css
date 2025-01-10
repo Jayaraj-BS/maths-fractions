@@ -1,0 +1,132 @@
+/* Styling for the entire quiz container */
+.quiz-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ff9e9e, #fbb8b8);
+  padding: 20px;
+}
+
+/* Styling for quiz card */
+.quiz-card {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Styling for question text */
+.question {
+  font-size: 24px;
+  color: #3a3a3a;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Styling for options */
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Styling for option buttons */
+.option-button {
+  font-size: 18px;
+  padding: 15px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+/* Hover and focus effect on option buttons */
+.option-button:hover,
+.option-button:focus {
+  transform: scale(1.05);
+  background-color: #ff6f61;
+}
+
+/* Navigation buttons */
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.navigation-buttons button {
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.navigation-buttons button:disabled {
+  background-color: #e0e0e0;
+  color: #888;
+}
+
+/* Score card styling */
+.score-card {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.score-card h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #4caf50;
+  margin-bottom: 20px;
+}
+
+.score-card button {
+  font-size: 18px;
+  padding: 12px 30px;
+  border-radius: 10px;
+  background-color: #ff6f61;
+  color: #fff;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.score-card button:hover {
+  background-color: #e65c50;
+}
+
+
+.prev-button {
+  background-color: lightcoral;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+}
+
+.prev-button:hover {
+  background-color: darkred;
+  color: white;
+}
+
+.next-button {
+  background-color: lightblue;
+  color: black;
+  border-radius: 5px;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+}
+
+.next-button:hover {
+  background-color: green;
+  color: white;
+}
+

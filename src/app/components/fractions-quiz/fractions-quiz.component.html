@@ -1,0 +1,29 @@
+<div *ngIf="!quizCompleted; else finalScore" class="quiz-container">
+  <mat-card class="quiz-card">
+    <h3 class="question">{{ questions[currentQuestionIndex].question }}</h3>
+    <div class="options">
+      <button *ngFor="let option of questions[currentQuestionIndex].options" mat-raised-button color="primary"
+        class="option-button" (click)="answer(option)">
+        {{ option }}
+      </button>
+    </div>
+    <div class="navigation-buttons">
+      <button mat-raised-button color="accent" (click)="prevQuestion()" [disabled]="currentQuestionIndex === 0"
+        class="prev-button">
+        Previous
+      </button>
+
+      <button mat-raised-button color="accent" (click)="nextQuestion()" [disabled]="currentQuestionIndex === questions.length - 1"
+        class="next-button">
+        Next
+      </button>
+    </div>
+  </mat-card>
+</div>
+
+<ng-template #finalScore>
+  <mat-card class="score-card">
+    <h2>Your Score: {{ score }} / {{ questions.length }}</h2>
+    <button mat-raised-button color="accent" (click)="resetQuiz()">Try Again</button>
+  </mat-card>
+</ng-template>

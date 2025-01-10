@@ -1,0 +1,42 @@
+<div class="visualization-container">
+  <svg width="300" height="300">
+    <!-- Full Circle -->
+    <circle cx="150" cy="150" r="100" fill="#f0f0f0"></circle>
+
+    <!-- Fraction (1/4) -->
+    <path d="M150,150 L150,50 A100,100 0 0,1 250,150 Z" fill="#ffcc00">
+      <animate attributeName="fill-opacity" from="0" to="1" dur="2s" repeatCount="indefinite" begin="0s" />
+    </path>
+    <text x="190" y="70" font-size="20" fill="#000" opacity="0">
+      <animate attributeName="opacity" from="0" to="1" dur="2s" repeatCount="indefinite" begin="0s" />
+      1/4
+    </text>
+
+    <!-- Fraction (2/4) -->
+    <path d="M150,150 L250,150 A100,100 0 0,1 150,250 Z" fill="#66ccff">
+      <animate attributeName="fill-opacity" from="0" to="1" dur="2s" repeatCount="indefinite" begin="0.5s" />
+    </path>
+    <text x="240" y="180" font-size="20" fill="#000" opacity="0">
+      <animate attributeName="opacity" from="0" to="1" dur="2s" repeatCount="indefinite" begin="0.5s" />
+      2/4
+    </text>
+
+    <!-- Fraction (3/4) -->
+    <path d="M150,150 L150,250 A100,100 0 0,1 50,150 Z" fill="#ff6666">
+      <animate attributeName="fill-opacity" from="0" to="1" dur="2s" repeatCount="indefinite" begin="1s" />
+    </path>
+    <text x="80" y="180" font-size="20" fill="#000" opacity="0">
+      <animate attributeName="opacity" from="0" to="1" dur="2s" repeatCount="indefinite" begin="1s" />
+      3/4
+    </text>
+
+    <!-- Fraction (4/4) -->
+    <path d="M150,150 L50,150 A100,100 0 0,1 150,50 Z" fill="#99ff99">
+      <animate attributeName="fill-opacity" from="0" to="1" dur="2s" repeatCount="indefinite" begin="1.5s" />
+    </path>
+    <text x="100" y="60" font-size="20" fill="#000" opacity="0">
+      <animate attributeName="opacity" from="0" to="1" dur="2s" repeatCount="indefinite" begin="1.5s" />
+      4/4
+    </text>
+  </svg>
+</div>
